@@ -1,0 +1,26 @@
+.item
+  display: flex
+  color: white
+  padding: 10px 0
+  &:not(:last-child)
+    border-bottom: 1px solid #444
+  & > input
+    display: inline-block
+    margin-right: 10px
+  & > span
+    flex: 1
+    font-size: 16px
+    &[data-status='done']
+      color: #999
+      text-decoration: line-through
+  & > .actions
+    display: inline-flex
+    align-self: flex-start
+    & > button
+      color: white
+      appearance: none
+      border: none
+      background: none
+      cursor: pointer
+      &.red
+        color: #f16a6a
